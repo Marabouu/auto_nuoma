@@ -17,7 +17,7 @@ function App() {
       <nav className="nav">
         <BrowserRouter>
           <Routes>
-            <Route path="/Page" element={<addedCars />} />
+            <Route path="/Page" element={addedCars} />
           </Routes>
         </BrowserRouter>
         <a href="/index.html">

@@ -132,7 +132,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 submit.addEventListener('click', function () {
   document.getElementById('select').selectedIndex = 0;
-  document.querySelector('#app').textContent = '';
+  document.querySelector('content').textContent = '';
   selectedBrand = null;
   appendResult();
 });
@@ -140,7 +140,7 @@ submit.addEventListener('click', function () {
 function App() {
   return (
     <div className="App">
-      <header imgSrc="{HeaderLogo}" />
+      <Header imgSrc={HeaderLogo} />
       <nav className="nav">
         <a href="/index.html">
           <button>Pagrindinis</button>
@@ -159,7 +159,8 @@ function App() {
           <option value="">Visi automobiliai</option>
         </select>
       </div>
-      <footer />
+      <div className="content"></div>
+      <Footer />
     </div>
   );
 }
