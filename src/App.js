@@ -1,14 +1,13 @@
 import React from 'react';
-import './index.css';
+import './App.css';
 import HeaderLogo from './images/zent-logo-png-car-22.png';
 import HeroLogo from './images/car-gif-7.gif';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Button from './Components/Button';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-import addCar from './Pages/addCar';
-import addedCars from './Pages/addedCars';
+import addCar from './Pages/addCar.js';
+import addedCars from './Pages/addedCars.js';
 
 function App() {
   return (

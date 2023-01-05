@@ -1,5 +1,5 @@
 import React from 'react';
-import '../index.css';
+import '../App.css';
 import HeaderLogo from '../images/zent-logo-png-car-22.png';
 import HeroLogo from '../images/car-gif-7.gif';
 import Header from '../Components/Header';
