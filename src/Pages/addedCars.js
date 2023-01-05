@@ -5,9 +5,9 @@ import HeroLogo from './images/car-gif-7.gif';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Button from './Components/Button';
-import Home from './Pages/Home';
-import addCar from './Page/addCar';
-import addedCars from './Page/addedCars';
+
+import addCar from './Pages/addCar';
+import addedCars from './Pages/addedCars';
 
 let selectedBrand = '';
 let newCars = [];
