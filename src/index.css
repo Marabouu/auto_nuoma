@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  min-height: 100vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Hero {
+  display: flex;
+  padding-top: 20px;
+}
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  background-color: #f8f8ff;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding-bottom: 60px;
+}
+
+#nav {
+  margin-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.mainPageImage {
+  width: 100%;
+}
+#button:hover {
+  color: orange;
+}
+
+#showCars:hover {
+  color: orange;
+}
+
+#submit:hover {
+  color: orange;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+#form2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16px;
+}
+
+#form3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#forms {
+  display: flex;
+}
+
+#carContainer {
+  padding: 10px;
+  min-width: 200px;
+}
+
+#carContainer3 {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 10px;
+  min-width: 750px;
+}
+#carContainer4 {
+  padding: 10px;
+  border-left: 0.5px solid grey;
+  padding-left: 30px;
+}
+
+div#carContainer p {
+  margin-bottom: 20px;
+}
+div#carContainer4 p {
+  margin-bottom: 20px;
+  min-width: 200px;
+}
+
+#adcars {
+  display: flex;
+  padding: 10px;
+
+  justify-content: center;
+}
+
+#showCars {
+  margin-right: 10px;
+}

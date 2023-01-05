@@ -1,0 +1,15 @@
+.copyright {
+  text-align: center;
+  font-size: 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 52.1%;
+  padding: 20px;
+  background-color: #fff5ee;
+
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}

@@ -1,0 +1,49 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  width: 744px;
+  padding: 20px;
+  background-color: #fff5ee;
+
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  height: 30px;
+  width: max-content;
+  background-color: #7fffd4;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 11px;
+  padding-right: 11px;
+  font-size: 30px;
+  color: grey;
+  border: 1px solid black;
+  border-radius: 15px;
+
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 100% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+.headCarImg {
+  margin-left: 0px;
+  height: 50px;
+  width: 200px;
+}
