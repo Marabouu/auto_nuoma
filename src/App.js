@@ -7,8 +7,8 @@ import Footer from './Components/Footer';
 import Button from './Components/Button';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import addCar from './Page/addCar';
-import addedCars from './Page/addedCars';
+import addCar from './Pages/addCar';
+import addedCars from './Pages/addedCars';
 
 function App() {
   return (
