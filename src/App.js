@@ -4,8 +4,8 @@ import './App.css';
 import HeaderLogo from './images/zent-logo-png-car-22.png';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import addedCars from './Pages/addedCars';
-import addCar from './Pages/addCar';
+import Addedcars from './Pages/addedCars';
+import Addcar from './Pages/addCar';
 import Button from './Components/Button';
 
 function App() {
@@ -23,8 +23,8 @@ function App() {
           </Button>
 
           <Routes>
-            <Route path="/Pages" component={addedCars} />
-            <Route path="/Pages" component={addCar} />
+            <Route path="/Pages" element={<Addedcars />} />
+            <Route path="/Pages" element={<Addcar />} />
           </Routes>
         </BrowserRouter>
       </nav>
