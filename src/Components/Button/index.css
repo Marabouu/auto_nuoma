@@ -1,0 +1,8 @@
+.submit:hover {
+  color: orange;
+}
+
+.submit {
+  margin-left: 5px;
+  padding: 5px;
+}

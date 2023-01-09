@@ -9,6 +9,12 @@ import Addedcars from './Pages/Addedcars';
 import Addcar from './Pages/Addcar';
 import Home from './Pages/Home';
 
+const linkStyle = {
+  margin: '10px',
+  textDecoration: 'none',
+  color: 'black',
+};
+
 function App() {
   return (
     <div className="App">
@@ -16,14 +22,23 @@ function App() {
       <nav className="nav">
         <BrowserRouter>
           <Button>
-            <Link to={'/Home'}> Pagrindinis</Link>
+            <Link to={'/Home'} style={linkStyle}>
+              {' '}
+              Pagrindinis
+            </Link>
           </Button>
           <Button>
-            <Link to={'/Addedcars'}> Pasirinkti automobilius</Link>
+            <Link to={'/Addedcars'} style={linkStyle}>
+              {' '}
+              Pasirinkti automobilius
+            </Link>
           </Button>
 
           <Button>
-            <Link to={'/Addcar'}> Ikelti automobili</Link>
+            <Link to={'/Addcar'} style={linkStyle}>
+              {' '}
+              Ikelti automobili
+            </Link>
           </Button>
 
           <Routes>

@@ -1,0 +1,27 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.form2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 19px;
+}
+
+.form3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forms {
+  display: flex;
+}
+
+.submit:hover {
+  color: orange;
+}
