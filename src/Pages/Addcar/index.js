@@ -3,28 +3,30 @@ import './index.css';
 
 let cars = [];
 
-window.addEventListener('DOMContentLoaded', () => {
-  if (window.localStorage.getItem('addedCarsList')) {
-    cars = JSON.parse(window.localStorage.getItem('addedCarsList'));
-  }
-});
-
-document.querySelector('form').addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  const formData = new FormData(e.target);
-  const newCar = Object.fromEntries(formData);
-  cars.push(newCar);
-  console.log(cars);
-  localStorage.setItem('addedCarsList', JSON.stringify(cars));
-
-  const inputs = document.querySelectorAll(
-    '#brand, #model, #year, #engine, #class, #carColor, #carImage, #gearbox, #fuel, #mileage'
-  );
-  inputs.forEach((input) => {
-    input.value = '';
+function rere() {
+  window.addEventListener('DOMContentLoaded', () => {
+    if (window.localStorage.getItem('addedCarsList')) {
+      cars = JSON.parse(window.localStorage.getItem('addedCarsList'));
+    }
   });
-});
+
+  document.querySelector('form').addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+    const newCar = Object.fromEntries(formData);
+    cars.push(newCar);
+    console.log(cars);
+    localStorage.setItem('addedCarsList', JSON.stringify(cars));
+
+    const inputs = document.querySelectorAll(
+      '#brand, #model, #year, #engine, #class, #carColor, #carImage, #gearbox, #fuel, #mileage'
+    );
+    inputs.forEach((input) => {
+      input.value = '';
+    });
+  });
+}
 
 function App() {
   return (
