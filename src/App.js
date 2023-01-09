@@ -1,13 +1,12 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import HeaderLogo from './images/zent-logo-png-car-22.png';
-import HeroLogo from './images/car-gif-7.gif';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import addedCars from './Pages/addedCars';
+import addCar from './Pages/addCar';
 import Button from './Components/Button';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import addCar from './Pages/addCar.js';
-import addedCars from './Pages/addedCars.js';
 
 function App() {
   return (
@@ -15,20 +14,19 @@ function App() {
       <Header imgSrc={HeaderLogo} />
       <nav className="nav">
         <BrowserRouter>
+          <Button>
+            <Link to={'/Pages'}> Pasirinkti automobilius</Link>
+          </Button>
+
+          <Button>
+            <Link to={'/Pages'}> Ikelti automobili</Link>
+          </Button>
+
           <Routes>
-            <Route path="/Page" element={addedCars} />
+            <Route path="/Pages" component={addedCars} />
+            <Route path="/Pages" component={addCar} />
           </Routes>
         </BrowserRouter>
-        <a href="/index.html">
-          <Button>Pagrindinis</Button>
-        </a>
-
-        <a href="/addedCars/addedCars.js">
-          <Button>Rinktis Automobilius</Button>
-        </a>
-        <a href="/addCar/addCar.html">
-          <Button>Ikelti Automobili</Button>
-        </a>
       </nav>
       <div className="Hero">
         <img
