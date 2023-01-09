@@ -4,9 +4,10 @@ import './App.css';
 import HeaderLogo from './images/zent-logo-png-car-22.png';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import Addedcars from './Pages/addedCars';
-import Addcar from './Pages/addCar';
 import Button from './Components/Button';
+import Addedcars from './Pages/Addedcars';
+import Addcar from './Pages/Addcar';
+import Home from './Pages/Home';
 
 function App() {
   return (
@@ -15,16 +16,20 @@ function App() {
       <nav className="nav">
         <BrowserRouter>
           <Button>
-            <Link to={'/Pages'}> Pasirinkti automobilius</Link>
+            <Link to={'/Home'}> Pagrindinis</Link>
+          </Button>
+          <Button>
+            <Link to={'/Addedcars'}> Pasirinkti automobilius</Link>
           </Button>
 
           <Button>
-            <Link to={'/Pages'}> Ikelti automobili</Link>
+            <Link to={'/Addcar'}> Ikelti automobili</Link>
           </Button>
 
           <Routes>
-            <Route path="/Pages" element={<Addedcars />} />
-            <Route path="/Pages" element={<Addcar />} />
+            <Route path="/Home" element={<Home />} />
+            <Route path="/Addedcars" element={<Addedcars />} />
+            <Route path="/Addcar" element={<Addcar />} />
           </Routes>
         </BrowserRouter>
       </nav>

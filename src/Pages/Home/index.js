@@ -1,9 +1,7 @@
 import React from 'react';
 
-import '../App.css';
-
 function App() {
-  return <h1>asd</h1>;
+  return;
 }
 
 export default App;
